@@ -1,0 +1,8 @@
+---
+talos:
+  serverip: "172.25.102.42"
+  javacabuildpath: "/JavaCABuildPath/RunnableSTMJava-1.0.jar"
+  talosprojectid: 30
+  talostestsetid: 10
+  parallelexecution: 1
+  
