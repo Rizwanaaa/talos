@@ -1,0 +1,19 @@
+stage('Functional Tests') { 
+            steps { 
+                node(props['testNode']) { 
+                    bat props['talosScriptPath'] + props['talosScriptName'] 
+ 
+                    publishHTML([ 
+                        allowMissing: false, 
+                        alwaysLinkToLastBuild: false, 
+                        keepAll: false, 
+                        reportDir: props['talosReportPath'], 
+                        reportFiles: props['talosReportFile'], 
+                        reportName: props['talosReportName'], 
+                        reportTitles: props['talosReportTitle'] 
+                    ]) 
+                } 
+ 
+                echo 'FUNCTIONAL TESTS SUCCESSFULLY DONE' 
+            } 
+        }
