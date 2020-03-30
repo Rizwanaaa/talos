@@ -1,0 +1,7 @@
+testNode = Talos 
+talosScriptPath = C:\\workspace\\Talos\\TalosCC\\ 
+talosScriptName = CC_FNOL_with_unverified_policy.bat 
+talosReportPath = C:\\Temp\\Reports\\TestSets\\6\\last_execution 
+talosReportFile = 7.html 
+talosReportName = Talos Report 
+talosReportTitle = ''
