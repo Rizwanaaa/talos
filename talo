@@ -1,0 +1,5 @@
+#!/bin/bash
+
+pid=$(cat /var/jenkins_home/workspace/talos/talos-spec-file.yaml| grep projectid | cut -d':' -f2);
+tid=$(cat /var/jenkins_home/workspace/talos/talos-spec-file.yaml| grep testidid | cut -d':' -f2);
+cd /var/jenkins_home/talostest/JavaCABuild; java -jar RunnableSTMJava-1.0.jar 10.131.61.196#/var/jenkins_home/talostest#$pid#$tid#1
